@@ -1,0 +1,47 @@
+<!--配置远程仓库认证信息-->
+<server>
+   <id>releases</id>
+   <username>admin</username>
+   <password>admin123</password>
+</server>
+<server>
+   <id>snapshots</id>
+   <username>admin</username>
+   <password>admin123</password>
+</server>
+
+<!--在pom.xml配置上传地址-->
+<!-- 配置上传远程仓库地址 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Internal Releases</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+
+<!--配置下载模板-->
+    <profile>
+      <id>nexus</id>
+      <repositories>
+        <repository>
+          <id>pubilc</id>
+          <name>Public Repositories</name>
+          <url>http://localhost:8081/nexus/content/groups/public/</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+    </profile>
+
+<!--在settings.xml配置激活下载-->
+  <activeProfiles>  
+    <activeProfile>nexus</activeProfile>  
+  </activeProfiles> 
