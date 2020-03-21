@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_5ERShmuAEeqPtaJXweAtkQ" name="电子商城需求模型" viewpoint="">
+  <packageImport xmi:id="_5ERSh2uAEeqPtaJXweAtkQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5ERSiGuAEeqPtaJXweAtkQ" name="用户管理">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5ERSiWuAEeqPtaJXweAtkQ" name="消费者">
+      <generalization xmi:id="_5ERSimuAEeqPtaJXweAtkQ" general="_5ER492uAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSi2uAEeqPtaJXweAtkQ" name="注册">
+      <ownedComment xmi:id="_5ERSjGuAEeqPtaJXweAtkQ" annotatedElement="_5ERSi2uAEeqPtaJXweAtkQ">
+        <body>&lt;p>用户使用注册&lt;/p></body>
+      </ownedComment>
+      <extend xmi:id="_5ERSjWuAEeqPtaJXweAtkQ" extendedCase="_5ERSwWuAEeqPtaJXweAtkQ" extensionLocation="_5ERSwmuAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSjmuAEeqPtaJXweAtkQ" name="登录"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSj2uAEeqPtaJXweAtkQ" name="修改密码">
+      <extensionPoint xmi:id="_5ERSkGuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSkWuAEeqPtaJXweAtkQ" name="忘记密码"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSkmuAEeqPtaJXweAtkQ" name="修改个人信息">
+      <extend xmi:id="_5ERSk2uAEeqPtaJXweAtkQ" extendedCase="_5ERSj2uAEeqPtaJXweAtkQ" extensionLocation="_5ERSkGuAEeqPtaJXweAtkQ"/>
+      <extensionPoint xmi:id="_5ERSlGuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSlWuAEeqPtaJXweAtkQ" memberEnd="_5ERSlmuAEeqPtaJXweAtkQ _5ERSmWuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSlmuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSlmuAEeqPtaJXweAtkQ" name="消费者" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSlWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSl2uAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSmGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSmWuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSlWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSmmuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSm2uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSnGuAEeqPtaJXweAtkQ" memberEnd="_5ERSnWuAEeqPtaJXweAtkQ _5ERSoGuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSnWuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSnWuAEeqPtaJXweAtkQ" name="注册" visibility="private" type="_5ERSi2uAEeqPtaJXweAtkQ" association="_5ERSnGuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSnmuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSn2uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSoGuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSnGuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSoWuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSomuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSo2uAEeqPtaJXweAtkQ" memberEnd="_5ERSpGuAEeqPtaJXweAtkQ _5ERSp2uAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSpGuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSpGuAEeqPtaJXweAtkQ" name="登录" visibility="private" type="_5ERSjmuAEeqPtaJXweAtkQ" association="_5ERSo2uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSpWuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSpmuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSp2uAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSo2uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSqGuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSqWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSqmuAEeqPtaJXweAtkQ" memberEnd="_5ERSq2uAEeqPtaJXweAtkQ _5ERSrmuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSq2uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSq2uAEeqPtaJXweAtkQ" name="修改个人信息" visibility="private" type="_5ERSkmuAEeqPtaJXweAtkQ" association="_5ERSqmuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSrGuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSrWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSrmuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSqmuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSr2uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSsGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSsWuAEeqPtaJXweAtkQ" memberEnd="_5ERSsmuAEeqPtaJXweAtkQ _5ERStWuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSsmuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSsmuAEeqPtaJXweAtkQ" name="忘记密码" visibility="private" type="_5ERSkWuAEeqPtaJXweAtkQ" association="_5ERSsWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSs2uAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERStGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERStWuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ERSsWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERStmuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSt2uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5ERSuGuAEeqPtaJXweAtkQ" name="短信API"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSuWuAEeqPtaJXweAtkQ" name="发送短信"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSumuAEeqPtaJXweAtkQ" memberEnd="_5ERSu2uAEeqPtaJXweAtkQ _5ERSvmuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSu2uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSu2uAEeqPtaJXweAtkQ" name="发送短信" visibility="private" type="_5ERSuWuAEeqPtaJXweAtkQ" association="_5ERSumuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSvGuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSvWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSvmuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSuGuAEeqPtaJXweAtkQ" association="_5ERSumuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSv2uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSwGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSwWuAEeqPtaJXweAtkQ" name="发送验证码">
+      <extensionPoint xmi:id="_5ERSwmuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5ERSw2uAEeqPtaJXweAtkQ" name="管理员">
+      <generalization xmi:id="_5ERSxGuAEeqPtaJXweAtkQ" general="_5ER492uAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSxWuAEeqPtaJXweAtkQ" name="查找用户">
+      <extend xmi:id="_5ERSxmuAEeqPtaJXweAtkQ" extendedCase="_5ERSyGuAEeqPtaJXweAtkQ" extensionLocation="_5ERSyWuAEeqPtaJXweAtkQ"/>
+      <extend xmi:id="_5ERSx2uAEeqPtaJXweAtkQ" extendedCase="_5ERS4WuAEeqPtaJXweAtkQ" extensionLocation="_5ERS4muAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERSyGuAEeqPtaJXweAtkQ" name="添加黑名单">
+      <extensionPoint xmi:id="_5ERSyWuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERSymuAEeqPtaJXweAtkQ" memberEnd="_5ERSy2uAEeqPtaJXweAtkQ _5ERSzmuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERSy2uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERSy2uAEeqPtaJXweAtkQ" name="查找用户" visibility="private" type="_5ERSxWuAEeqPtaJXweAtkQ" association="_5ERSymuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSzGuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERSzWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERSzmuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSw2uAEeqPtaJXweAtkQ" association="_5ERSymuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERSz2uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS0GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS0WuAEeqPtaJXweAtkQ" memberEnd="_5ERS0muAEeqPtaJXweAtkQ _5ERS1WuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS0muAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS0muAEeqPtaJXweAtkQ" name="登录" visibility="private" type="_5ERSjmuAEeqPtaJXweAtkQ" association="_5ERS0WuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS02uAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS1GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS1WuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSw2uAEeqPtaJXweAtkQ" association="_5ERS0WuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS1muAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS12uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERS2GuAEeqPtaJXweAtkQ" name="查看个人信息">
+      <extend xmi:id="_5ERS2WuAEeqPtaJXweAtkQ" extendedCase="_5ERSkmuAEeqPtaJXweAtkQ" extensionLocation="_5ERSlGuAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS2muAEeqPtaJXweAtkQ" memberEnd="_5ERS22uAEeqPtaJXweAtkQ _5ERS3muAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS22uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS22uAEeqPtaJXweAtkQ" name="查看个人信息" visibility="private" type="_5ERS2GuAEeqPtaJXweAtkQ" association="_5ERS2muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS3GuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS3WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS3muAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSw2uAEeqPtaJXweAtkQ" association="_5ERS2muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS32uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS4GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ERS4WuAEeqPtaJXweAtkQ" name="查看用户">
+      <extensionPoint xmi:id="_5ERS4muAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS42uAEeqPtaJXweAtkQ" memberEnd="_5ERS5GuAEeqPtaJXweAtkQ _5ERS52uAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS5GuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS5GuAEeqPtaJXweAtkQ" name="忘记密码" visibility="private" type="_5ERSkWuAEeqPtaJXweAtkQ" association="_5ERS42uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS5WuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS5muAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS52uAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSw2uAEeqPtaJXweAtkQ" association="_5ERS42uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS6GuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS6WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS6muAEeqPtaJXweAtkQ" memberEnd="_5ERS62uAEeqPtaJXweAtkQ _5ERS7muAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS62uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS62uAEeqPtaJXweAtkQ" name="修改密码" visibility="private" type="_5ERSj2uAEeqPtaJXweAtkQ" association="_5ERS6muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS7GuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS7WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS7muAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSw2uAEeqPtaJXweAtkQ" association="_5ERS6muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS72uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS8GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5ERS8WuAEeqPtaJXweAtkQ" name="商家">
+      <generalization xmi:id="_5ERS8muAEeqPtaJXweAtkQ" general="_5ER492uAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS82uAEeqPtaJXweAtkQ" memberEnd="_5ERS9GuAEeqPtaJXweAtkQ _5ERS92uAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS9GuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS9GuAEeqPtaJXweAtkQ" name="登录" visibility="private" type="_5ERSjmuAEeqPtaJXweAtkQ" association="_5ERS82uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS9WuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS9muAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS92uAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERS82uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS-GuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS-WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERS-muAEeqPtaJXweAtkQ" memberEnd="_5ERS-2uAEeqPtaJXweAtkQ _5ERS_muAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERS-2uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERS-2uAEeqPtaJXweAtkQ" name="查看用户" visibility="private" type="_5ERS4WuAEeqPtaJXweAtkQ" association="_5ERS-muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS_GuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERS_WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERS_muAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERS-muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERS_2uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTAGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERTAWuAEeqPtaJXweAtkQ" memberEnd="_5ERTAmuAEeqPtaJXweAtkQ _5ERTBWuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERTAmuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERTAmuAEeqPtaJXweAtkQ" name="忘记密码" visibility="private" type="_5ERSkWuAEeqPtaJXweAtkQ" association="_5ERTAWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTA2uAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTBGuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERTBWuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERTAWuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTBmuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTB2uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERTCGuAEeqPtaJXweAtkQ" memberEnd="_5ERTCWuAEeqPtaJXweAtkQ _5ERTDGuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERTCWuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERTCWuAEeqPtaJXweAtkQ" name="修改密码" visibility="private" type="_5ERSj2uAEeqPtaJXweAtkQ" association="_5ERTCGuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTCmuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTC2uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERTDGuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERTCGuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTDWuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTDmuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERTD2uAEeqPtaJXweAtkQ" memberEnd="_5ERTEGuAEeqPtaJXweAtkQ _5ERTE2uAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERTEGuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERTEGuAEeqPtaJXweAtkQ" name="查看个人信息" visibility="private" type="_5ERS2GuAEeqPtaJXweAtkQ" association="_5ERTD2uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTEWuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTEmuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERTE2uAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERTD2uAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTFGuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTFWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ERTFmuAEeqPtaJXweAtkQ" memberEnd="_5ERTF2uAEeqPtaJXweAtkQ _5ERTGmuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ERTF2uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ERTF2uAEeqPtaJXweAtkQ" name="修改个人信息" visibility="private" type="_5ERSkmuAEeqPtaJXweAtkQ" association="_5ERTFmuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ERTGGuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ERTGWuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ERTGmuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERS8WuAEeqPtaJXweAtkQ" association="_5ERTFmuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER44GuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER44WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ER44muAEeqPtaJXweAtkQ" memberEnd="_5ER442uAEeqPtaJXweAtkQ _5ER45muAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ER442uAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ER442uAEeqPtaJXweAtkQ" name="搜索商品" visibility="private" type="_5ER4-2uAEeqPtaJXweAtkQ" association="_5ER44muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER45GuAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER45WuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ER45muAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ER44muAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER452uAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER46GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ER46WuAEeqPtaJXweAtkQ" memberEnd="_5ER46muAEeqPtaJXweAtkQ _5ER47WuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ER46muAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ER46muAEeqPtaJXweAtkQ" name="查看购物车" visibility="private" type="_5ER5A2uAEeqPtaJXweAtkQ" association="_5ER46WuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER462uAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER47GuAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ER47WuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ER46WuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER47muAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER472uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5ER48GuAEeqPtaJXweAtkQ" memberEnd="_5ER48WuAEeqPtaJXweAtkQ _5ER49GuAEeqPtaJXweAtkQ" navigableOwnedEnd="_5ER48WuAEeqPtaJXweAtkQ">
+      <ownedEnd xmi:id="_5ER48WuAEeqPtaJXweAtkQ" name="评价" visibility="private" type="_5ER5CGuAEeqPtaJXweAtkQ" association="_5ER48GuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER48muAEeqPtaJXweAtkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER482uAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5ER49GuAEeqPtaJXweAtkQ" name="" visibility="private" type="_5ERSiWuAEeqPtaJXweAtkQ" association="_5ER48GuAEeqPtaJXweAtkQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ER49WuAEeqPtaJXweAtkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ER49muAEeqPtaJXweAtkQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5ER492uAEeqPtaJXweAtkQ" name="用户"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5ER4-GuAEeqPtaJXweAtkQ" name="客户管理"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5ER4-WuAEeqPtaJXweAtkQ" name="后台管理"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5ER4-muAEeqPtaJXweAtkQ" name="购物管理">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER4-2uAEeqPtaJXweAtkQ" name="搜索商品">
+      <extend xmi:id="_5ER4_GuAEeqPtaJXweAtkQ" extendedCase="_5ER4_WuAEeqPtaJXweAtkQ" extensionLocation="_5ER5AGuAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER4_WuAEeqPtaJXweAtkQ" name="查看商品">
+      <extend xmi:id="_5ER4_muAEeqPtaJXweAtkQ" extendedCase="_5ER5AWuAEeqPtaJXweAtkQ" extensionLocation="_5ER5AmuAEeqPtaJXweAtkQ"/>
+      <extend xmi:id="_5ER4_2uAEeqPtaJXweAtkQ" extendedCase="_5ER5CmuAEeqPtaJXweAtkQ" extensionLocation="_5ER5DWuAEeqPtaJXweAtkQ"/>
+      <extensionPoint xmi:id="_5ER5AGuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER5AWuAEeqPtaJXweAtkQ" name="添加到购物车">
+      <extensionPoint xmi:id="_5ER5AmuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER5A2uAEeqPtaJXweAtkQ" name="查看购物车">
+      <extend xmi:id="_5ER5BGuAEeqPtaJXweAtkQ" extendedCase="_5ER5CmuAEeqPtaJXweAtkQ" extensionLocation="_5ER5DGuAEeqPtaJXweAtkQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER5BWuAEeqPtaJXweAtkQ" name="支付">
+      <extend xmi:id="_5ER5BmuAEeqPtaJXweAtkQ" extendedCase="_5ER5CGuAEeqPtaJXweAtkQ" extensionLocation="_5ER5CWuAEeqPtaJXweAtkQ"/>
+      <extensionPoint xmi:id="_5ER5B2uAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER5CGuAEeqPtaJXweAtkQ" name="评价">
+      <extensionPoint xmi:id="_5ER5CWuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5ER5CmuAEeqPtaJXweAtkQ" name="提交订单">
+      <extend xmi:id="_5ER5C2uAEeqPtaJXweAtkQ" extendedCase="_5ER5BWuAEeqPtaJXweAtkQ" extensionLocation="_5ER5B2uAEeqPtaJXweAtkQ"/>
+      <extensionPoint xmi:id="_5ER5DGuAEeqPtaJXweAtkQ" name="ExtensionPoint1"/>
+      <extensionPoint xmi:id="_5ER5DWuAEeqPtaJXweAtkQ" name="ExtensionPoint2"/>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:id="_5ER5DmuAEeqPtaJXweAtkQ">
+    <eAnnotations xmi:id="_5ER5D2uAEeqPtaJXweAtkQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
