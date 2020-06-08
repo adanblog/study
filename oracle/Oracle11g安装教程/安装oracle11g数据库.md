@@ -1,7 +1,7 @@
 # 安装oracle11g数据库
 
 ##  一、oracle11g下载
-进入https://www.oracle.com/database/technologies/oracle-database-software-downloads.html选择相应的版本下载。oracle11g版本有两个文件,下载的时候需要登录，你可以注册一个或者百度一下oracle账号。
+点击[链接进入](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html)进入选择相应的版本下载。oracle11g版本有两个文件,下载的时候需要登录，你可以注册一个或者百度一下oracle账号。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200606152319593.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)
 
 ##  二、oracle安装
@@ -30,9 +30,20 @@ ps:解压后的路径最好不要出现中文和空格等不规则符号，否�
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020060615232022.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)数据库管理软件文件及DBMS文件安装完成后，会自动创建一个数据库实例默认前面的orcl数据库，还是等待就行
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020060615232046.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)实例数据库创建完成了，系统默认把所有账户都锁定，不可用（除了sys和system账户外），点击右边的口令管理，将常用的Scott用户解锁（点击√就行）输入自行设置密码，一般为123456
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200606152319893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)![在这里插入图片描述](https://img-blog.csdnimg.cn/20200606152319888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)这里口令设置过于简单会提示你口令不能满足oracle复杂性策略，点击“是”继续就行。
+
 ### 第八步：安装完成了，关闭即可。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200606152319923.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)
 ### 第九步：测试安装是否成功
 以通过开始—>Oracle 11g—>应用开发程序—>Sql Developer 或 Sql Plus进行连接，打开后按照提示输入账户密码即可，或者通过命令行模式打开（快捷键win+r），输入用户名和密码!在这里插入图片描述]
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200606152319917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)
 
+> **关于阿丹博客**
+>
+> 以上内容，纯属一家之言，因个人能力有限，难免有疏漏和错误之处，如发现 bug 或者有更好的   >建议，欢迎留言批评指正，不吝感激。
+> 下面阿丹的个人博客，记录所有学习和工作中的博文，欢迎大家前去逛逛。
+>
+> 个人博客：[http://www.adanblog.com/](http://www.adanblog.com/)
+>
+> GitHub：[https://github.com/adanblog/](https://github.com/adanblog/)
+>
+> ![](https://img-blog.csdnimg.cn/20200407220413142.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlbjkwMTIzMHpp,size_16,color_FFFFFF,t_70)
