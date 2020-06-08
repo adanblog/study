@@ -1,0 +1,20 @@
+--创建表空间
+create tablespace LOMS_DATA 
+datafile 'D:\tool\oracleData\loms\loms.dbf' size 300m
+autoextend on next 10M maxsize unlimited 
+
+--查询表空间
+SELECT file_name, tablespace_name, bytes, autoextensible
+FROM dba_data_files
+WHERE tablespace_name = 'LOMS_DATA';
+
+--指定用户表空间
+alter user LOMS default tablespace LOMS_DATA;
+
+--给用户授予权限
+grant connect to LOMS;--授予用户连接db的权限
+grant dba to LOMS; --dba 授权
+grant unlimited tablespace to LOMS;--全局表空间权限
+
+--导入dmp文件
+imp LOMS/123456 full=y file=dataBase1211.dmp 
